@@ -1,0 +1,115 @@
+@charset "UTF-8";
+.container-app {
+  display: flex;
+  justify-content: center;
+  margin: 7rem 10rem;
+}
+
+@media screen and (max-width: 990px) {
+  .container-app {
+    margin: 5rem 4rem;
+  }
+}
+.home-container {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  padding: 1rem;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 7rem;
+  box-shadow: 0 0 10px hsl(228, 100%, 84%);
+  border-radius: 20px;
+}
+
+.svg-position {
+  position: absolute; /* Posicionamos el texto sobre el SVG */
+  top: 50px; /* Ajusta esta propiedad para cambiar la distancia desde la parte superior del contenedor */
+  left: 16%; /* Ajusta esta propiedad para cambiar la posición horizontal del texto */
+  transform: translateX(-50%); /* Centramos el texto horizontalmente */
+  font-size: 16px; /* Ajusta el tamaño de fuente según tus preferencias */
+  color: #c22929; /* Ajusta el color del texto según tus preferencias */
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+.svg-position .direction {
+  display: flex;
+  gap: 1rem;
+}
+.svg-position .number {
+  color: white;
+  display: flex;
+  justify-content: center;
+  height: 95%;
+  align-items: center;
+  width: 95%;
+  font-size: 18px;
+}
+.svg-position .number:hover {
+  color: hsl(243, 100%, 62%);
+}
+
+.pointer-steps {
+  border: 1px solid white;
+  height: 35px;
+  border-radius: 35px;
+  width: 35px;
+  cursor: pointer;
+}
+.pointer-steps:hover {
+  background-color: hsl(206, 94%, 87%);
+  transition: background-color 1s ease;
+}
+
+.text-steps {
+  text-transform: uppercase;
+}
+.text-steps .step {
+  color: white;
+  font-size: 14px;
+  font-weight: 400;
+}
+.text-steps .info {
+  color: white;
+  font-size: 16px;
+  margin-top: 1px;
+}
+
+.button-container {
+  margin-top: 7rem;
+  display: flex;
+  justify-content: flex-end;
+}
+.button-container .style {
+  cursor: pointer;
+  color: rgb(252, 249, 249);
+  padding: 1rem;
+  border-radius: 5px;
+  background-color: hsl(213, 96%, 18%);
+  border: none;
+  font-weight: 600;
+}
+.button-container .style:hover {
+  background-color: hsl(243, 100%, 62%);
+  transition: background-color 0.3s ease;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: hsl(0, 0%, 100%);
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+/*# sourceMappingURL=styles.css.map */

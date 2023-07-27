@@ -1,0 +1,81 @@
+@use "variables";
+
+.container-app {
+  display: flex;
+  justify-content: center;
+  margin: 7rem 10rem;
+}
+@media screen and (max-width: 990px) {
+  .container-app {
+    margin: 5rem 4rem;
+  }
+}
+
+.home-container {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  padding: 1rem;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 7rem;
+  box-shadow: 0 0 10px variables.$PastelBlue;
+  border-radius: 20px;
+}
+
+.svg-position {
+  position: absolute; /* Posicionamos el texto sobre el SVG */
+  top: 50px; /* Ajusta esta propiedad para cambiar la distancia desde la parte superior del contenedor */
+  left: 16%; /* Ajusta esta propiedad para cambiar la posición horizontal del texto */
+  transform: translateX(-50%); /* Centramos el texto horizontalmente */
+  font-size: 16px; /* Ajusta el tamaño de fuente según tus preferencias */
+  color: #c22929; /* Ajusta el color del texto según tus preferencias */
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  .direction {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .number {
+    color: white;
+    display: flex;
+    justify-content: center;
+    height: 95%;
+    align-items: center;
+    width: 95%;
+    font-size: 18px;
+    &:hover {
+      color: variables.$PurplishBlue;
+    }
+  }
+}
+
+.pointer-steps {
+  border: 1px solid white;
+  height: 35px;
+  border-radius: 35px;
+  width: 35px;
+  cursor: pointer;
+  &:hover {
+    background-color: variables.$LightBlue;
+    transition: background-color 1s ease;
+  }
+}
+
+.text-steps {
+  text-transform: uppercase;
+
+  .step {
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  .info {
+    color: white;
+    font-size: 16px;
+    margin-top: 1px;
+  }
+}
