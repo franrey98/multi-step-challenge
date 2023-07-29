@@ -21,15 +21,16 @@
   gap: 7rem;
   box-shadow: 0 0 10px variables.$PastelBlue;
   border-radius: 20px;
+  min-width: 900px;
 }
 
 .svg-position {
-  position: absolute; /* Posicionamos el texto sobre el SVG */
-  top: 50px; /* Ajusta esta propiedad para cambiar la distancia desde la parte superior del contenedor */
-  left: 16%; /* Ajusta esta propiedad para cambiar la posición horizontal del texto */
-  transform: translateX(-50%); /* Centramos el texto horizontalmente */
-  font-size: 16px; /* Ajusta el tamaño de fuente según tus preferencias */
-  color: #c22929; /* Ajusta el color del texto según tus preferencias */
+  position: absolute;
+  top: 50px;
+  left: 16%;
+  transform: translateX(-50%);
+  font-size: 16px;
+  color: #c22929;
   display: flex;
   flex-direction: column;
   gap: 2.4rem;
@@ -42,13 +43,23 @@
     color: white;
     display: flex;
     justify-content: center;
-    height: 95%;
+    height: 100%;
     align-items: center;
-    width: 95%;
+    width: 100%;
     font-size: 18px;
     &:hover {
       color: variables.$PurplishBlue;
     }
+  }
+
+  .active-number {
+    color: variables.$PurplishBlue;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+    width: 100%;
+    font-size: 18px;
   }
 }
 
@@ -62,6 +73,13 @@
     background-color: variables.$LightBlue;
     transition: background-color 1s ease;
   }
+}
+.pointer-steps-active {
+  border: 1px solid white;
+  height: 35px;
+  border-radius: 35px;
+  width: 35px;
+  background-color: variables.$LightBlue;
 }
 
 .text-steps {

@@ -1,4 +1,4 @@
-import ButtonStep from "../ButtonStep/ButtonStep";
+import ButtonStep from "../../ButtonStep/ButtonStep";
 
 const FormStepOne = () => {
   return (

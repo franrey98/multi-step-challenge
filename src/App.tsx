@@ -1,7 +1,12 @@
+import { StepsProvider } from "./context/StepsContext";
 import Home from "./pages/Home";
 
 function App() {
-  return <Home />;
+  return (
+    <StepsProvider>
+      <Home />
+    </StepsProvider>
+  );
 }
 
 export default App;

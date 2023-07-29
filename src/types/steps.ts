@@ -1,4 +1,4 @@
 export interface Step {
-  step: string;
+  step: number;
   title: string;
 }

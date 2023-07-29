@@ -1,13 +1,16 @@
-import React from "react";
+import useSteps from "../../hooks/useSteps";
 
 interface PropsButton {
   textButton: string;
 }
 
 const ButtonStep = ({ textButton }: PropsButton) => {
+  const { nextStep } = useSteps();
   return (
     <div className="button-container">
-      <button className="style">{textButton}</button>
+      <button onClick={nextStep} className="style">
+        {textButton}
+      </button>
     </div>
   );
 };
