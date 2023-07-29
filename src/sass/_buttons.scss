@@ -8,7 +8,7 @@
   .style {
     cursor: pointer;
     color: rgb(252, 249, 249);
-    padding: 1rem;
+    padding: 16px 20px;
     border-radius: 5px;
     background-color: variables.$MarineBlue;
     border: none;
@@ -18,5 +18,17 @@
       background-color: variables.$PurplishBlue;
       transition: background-color 0.3s ease;
     }
+  }
+}
+
+.button-back {
+  border: none;
+  cursor: pointer;
+  color: variables.$CoolGray;
+  font-size: 14px;
+  font-weight: 500;
+
+  &:hover {
+    text-decoration: underline;
   }
 }

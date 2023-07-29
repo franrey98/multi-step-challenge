@@ -1,0 +1,37 @@
+@use "variables";
+
+.container-stepOne {
+  h1 {
+    color: variables.$MarineBlue;
+  }
+
+  p {
+    color: variables.$CoolGray;
+    margin-top: 5px;
+  }
+}
+
+.container-form {
+  p {
+    color: variables.$MarineBlue;
+  }
+
+  div {
+    margin-top: 2rem;
+  }
+
+  input {
+    width: 100%;
+    height: 3rem;
+    margin-top: 0.5rem;
+    padding: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid rgb(172, 172, 172);
+
+    &:focus {
+      outline: none; // Quitamos el borde predeterminado del navegador al estar seleccionado
+      border-color: variables.$PurplishBlue; // Cambia el color del borde cuando el input está seleccionado
+    }
+  }
+}
